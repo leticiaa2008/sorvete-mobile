@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <title>Scoop Sorveteria</title>
+
+    <meta name="theme-color" content="#E88AC0" />
+
+    <link rel="icon" type="image/png" href="/assets/images/logo.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              titulo: ["Playfair Display", "serif"],
+              texto: ["Poppins", "sans-serif"]
+            },
+            colors: {
+              primary: "#E76F8B",
+              secondary: "#F7D6E0",
+              cream: "#FFF8F4",
+              dark: "#4B2E2E"
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+
+  <body class="font-texto bg-cream text-dark">
+    <div id="root"></div>
+
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
